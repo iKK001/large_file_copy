@@ -6,14 +6,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0645e6c5-7cd1-49b2-b9d5-bb58133272f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/bin/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/bin/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLargeFileCopyPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLargeFileCopyPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/large_file_copy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/large_file_copy.iml" afterDir="false" />
-    </list>
+    <list default="true" id="0645e6c5-7cd1-49b2-b9d5-bb58133272f5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -29,26 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="large_file_copy_android.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/bin/large_file_copy_android.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LargeFileCopyPlugin.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/bin/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            <state relative-caret-position="243">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="large_file_copy_android.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/large_file_copy_android.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -212,7 +191,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" visible="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" visible="true" weight="0.07333333" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -342,20 +321,20 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/bin/large_file_copy_android.iml">
+    <entry file="file://$PROJECT_DIR$/android/large_file_copy_android.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/large_file_copy_android.iml">
+    <entry file="file://$PROJECT_DIR$/android/bin/large_file_copy_android.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/bin/src/main/kotlin/com/example/largefilecopy/LargeFileCopyPlugin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="243">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>

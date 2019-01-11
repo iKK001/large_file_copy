@@ -25,7 +25,7 @@ public class SwiftLargeFileCopyPlugin: NSObject, FlutterPlugin {
       } 
 
     } else if call.method == "getPlatformVersion" {
-      result("Running on: iOS " + UIDevice.current.systemVersion)
+      result("Running on iOS: " + UIDevice.current.systemVersion)
     } else {
       result.notImplemented()
     }
