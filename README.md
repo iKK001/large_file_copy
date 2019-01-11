@@ -52,7 +52,7 @@ import 'package:large_file_copy/large_file_copy.dart';
   Future<void> initPlatformState() async {
     String fullPathName;
     try {
-      fullPathName = await LargeFileCopy("myLargeFileName.db").copyDB;
+      fullPathName = await LargeFileCopy("myLargeFileName.db").copyLargeFile;
     } on PlatformException {
       fullPathName = 'Failed to copy the DB.';
     }

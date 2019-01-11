@@ -10,14 +10,26 @@ class LargeFileCopyPlugin: MethodCallHandler {
   companion object {
     @JvmStatic
     fun registerWith(registrar: Registrar) {
-      val channel = MethodChannel(registrar.messenger(), "large_file_copy")
+      val channel = MethodChannel(registrar.messenger(), "ch.ideenkaffee.largefilecopy")
       channel.setMethodCallHandler(LargeFileCopyPlugin())
     }
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+
+    // flutter cmds dispatched on Android device :
+    if (call.method == "copyLargeFile") {
+
+      if call.arguments != nil {
+        if let myArgs = args as? [String: Any],
+           let fileName = myArgs["fileName"] as? String {
+
+           }
+      } else {
+        result.failure ("Android could not extract flutter arguments in method: (copyLargeFile)")
+      } 
+    } else if call.method == "getPlatformVersion" {
+      result.success("Running on: Android " + ${android.os.Build.VERSION.RELEASE}")
     } else {
       result.notImplemented()
     }

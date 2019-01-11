@@ -21,13 +21,13 @@ public class SwiftLargeFileCopyPlugin: NSObject, FlutterPlugin {
          let fileName = myArgs["fileName"] as? String {
           result(copyDatabaseIfNeeded(fileName: fileName))
       } else {
-        result("iOS could not extract flutter arguments in method: (sendParams)")
+        result("iOS could not extract flutter arguments in method: (copyLargeFile)")
       } 
 
     } else if call.method == "getPlatformVersion" {
       result("Running on: iOS " + UIDevice.current.systemVersion)
     } else {
-      result("Flutter method not implemented on iOS")
+      result.notImplemented()
     }
   }
 }
