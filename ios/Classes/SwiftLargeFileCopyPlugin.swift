@@ -11,23 +11,21 @@ public class SwiftLargeFileCopyPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
 
     // flutter cmds dispatched on iOS device :
-    if call.method == "copyLargeFile" {
-
-      guard let args = call.arguments else {
-        return
-      }
-
-      if let myArgs = args as? [String: Any],
-         let fileName = myArgs["fileName"] as? String {
-          result(copyDatabaseIfNeeded(fileName: fileName))
-      } else {
-        result("iOS could not extract flutter arguments in method: (copyLargeFile)")
-      } 
-
-    } else if call.method == "getPlatformVersion" {
-      result("Running on iOS: " + UIDevice.current.systemVersion)
-    } else {
-      result("iOS calling method not recognized")
+    switch(call.method) {
+      case "copyLargeFile":
+        guard let args = call.arguments else {
+          return
+        }
+        if let myArgs = args as? [String: Any],
+          let fileName = myArgs["fileName"] as? String {
+            result(copyDatabaseIfNeeded(fileName: fileName))
+        } else {
+          result("iOS could not extract flutter arguments in method: (copyLargeFile)")
+        } 
+      case "getPlatformVersion":
+        result("Running on iOS: " + UIDevice.current.systemVersion)
+      default:
+        result("iOS calling method not recognized")
     }
   }
 }
