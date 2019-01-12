@@ -41,17 +41,22 @@ private func copyDatabaseIfNeeded(fileName: String) -> String {
         return "Could not find documents URL"
     }
 
-    let finalDatabaseURL = documentsUrl.first!.appendingPathComponent(fileName)
-    
-    if !( (try? finalDatabaseURL.checkResourceIsReachable()) ?? false) {
+    let outputFileURL = documentsUrl.first!.appendingPathComponent(fileName)
+    let filePath = outputFileURL.path
+    let fileManager = FileManager.default
+    if !fileManager.fileExists(atPath: filePath) {
+      if !( (try? outputFileURL.checkResourceIsReachable()) ?? false) {
         let documentsURL = Bundle.main.resourceURL?.appendingPathComponent(fileName)
         do {
-            try fileManager.copyItem(atPath: (documentsURL?.path)!, toPath: finalDatabaseURL.path)
-            return "\(finalDatabaseURL.path)"
+            try fileManager.copyItem(atPath: (documentsURL?.path)!, toPath: filePath)
+            return "\(filePath)"
         } catch let error as NSError {
             return "Couldn't copy file to final location! Error:\(error.description)"
         }
+      } else {
+        return "\(filePath)"
+      }
     } else {
-        return "\(finalDatabaseURL.path)"
+      return "\(filePath)"
     }
 }

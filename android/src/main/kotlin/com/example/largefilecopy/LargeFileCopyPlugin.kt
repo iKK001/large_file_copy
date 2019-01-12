@@ -50,7 +50,9 @@ class LargeFileCopyPlugin: MethodCallHandler {
     val appliationDocumentsFolderPath: String = PathUtils.getDataDirectory(mRegistrar.context())
     val outputFilePath: String = appliationDocumentsFolderPath + "/" + fileName
 
-    File(outputFilePath).copyInputStreamToFile(assetStream)   
+    if (!File(outputFilePath).exists()) {
+      File(outputFilePath).copyInputStreamToFile(assetStream)   
+    }
     return outputFilePath
   }
 
