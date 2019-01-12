@@ -43,8 +43,7 @@ private func copyDatabaseIfNeeded(fileName: String) -> String {
 
     let outputFileURL = documentsUrl.first!.appendingPathComponent(fileName)
     let filePath = outputFileURL.path
-    let fileManager = FileManager.default
-    if !fileManager.fileExists(atPath: filePath) {
+    if !(fileManager.fileExists(atPath: filePath)) {
       if !( (try? outputFileURL.checkResourceIsReachable()) ?? false) {
         let documentsURL = Bundle.main.resourceURL?.appendingPathComponent(fileName)
         do {
