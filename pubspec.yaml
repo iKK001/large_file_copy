@@ -1,8 +1,8 @@
 name: large_file_copy
 description: Copies a large file from .
 version: 0.0.1
-author: Stephan Korner
-homepage:
+author: Stephan Korner <s.korner@ideenkaffee.ch>
+homepage: https://www.ideenkaffee.ch
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
