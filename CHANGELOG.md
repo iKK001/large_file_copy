@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* TODO: This is the first release of the large_file_copy plugin for Flutter

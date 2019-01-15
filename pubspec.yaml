@@ -1,7 +1,7 @@
 name: large_file_copy
-description: A new flutter plugin project.
+description: Copies a large file from .
 version: 0.0.1
-author:
+author: Stephan Korner
 homepage:
 
 environment:
